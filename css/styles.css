@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.pagina-registro, .pagina-finalizacao-compra {
+  height: 100vh;
+  background-color: #04044c;
+  color: #fff;
+}
+
+#conteudo-cadastro-container, #container-formulario-pedido {
+  margin: 0 auto;
+  width: 60%;
+  padding: 50px 0 70px;
+}
+
+.formulario-registro {
+  margin-bottom: 80px !important;
+}
+
+.header-container {
+  padding: 15px 30px;
+  background-color: #eed130;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-container i {
+  font-size: 50px;
+  padding-inline: 10px;
+  background-color: #eed130;
+  border-radius: 20px;
+  border: 3px solid #171576;
+  font-weight: bold;
+}
+
+.header-container h1 {
+  color: #171576;
+  font-weight: bold;
+}
+
+.card-principal {
+  padding: 20px;
+}
+
+.mu-textfield input {
+  background-color: #04044c;
+  border: 2px solid #20235b;
+  color: #fff;
+}
+
+.mu-textfield input, .mu-textfield label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+.mu-textfield label {
+  padding-inline: 30px !important;
+}
+
+#btn-submit {
+  background-color: #eed130 !important;
+  border: none;
+  height: 3em;
+  width: 8em;
+  border-radius: 1.5em;
+  font-weight: bold;
+}
+
+#btn-submit:hover {
+  background-color: #d7bd28 !important;
+}
+
+#btn-submit:active {
+  border: 2px solid #eed130 !important;
+}
+
+.mu-textfield input:focus {
+  border-color: #eed130;
+  background-color: #20235b;
+  color: #ffff;
+}
+
+.mu-textfield input:disabled {
+  background-color: #494a7d;
+  color: #8789af;
+}
+
+#passos {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #20235b;
+  position: relative;
+}
+
+.linha {
+  position: absolute;
+}
+
+.passo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.passo i {
+  background-color: #494a7d;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+.passo .active {
+  background-color: #eed130;
+}
+
+.passo p {
+  color: #8789af;
+}
+
+#efeitoFade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#efeitoFade .spinner-border {
+  width: 60px;
+  height: 60px;
+}
+
+.escondido {
+  display: none !important;
+}
+
+#mensagem {
+  width: 40%;
+}
+
+.alert.alert-light p {
+  border-bottom: 1px solid #333;
+  padding: 1.2em 0;
+}
+
+.linha {
+  border-bottom: 1px solid #20235b;
+  position: absolute;
+  top: 22.5px;
+  width: 90%;
+  left: 5%;
+  z-index: -1;
+}
+
+#formulario-header p {
+  color: #8789af;
+}
+
+
+#container-formulario-pedido input,
+#container-formulario-pedido select {
+  background-color: #04044c;
+  border: 2px solid #20235b;
+  color: #fff;
+}
+
+#container-formulario-pedido select {
+  padding: 1rem 0.75rem;
+}
+
+#container-formulario-pedido label {
+  color: #8789af;
+}
+
+#container-formulario-pedido input:disabled,
+#container-formulario-pedido select:disabled {
+  background-color: #494a7d;
+  color: #8789af;
+}
+
+#container-formulario-pedido input:focus {
+  border-color: #eed130;
+}
+
+#container-formulario-pedido .form-floating>label {
+  left: 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 30px;
+  background-color: #eed130;
+  color: #171576;
+}
+
+
+.footer-container i {
+  font-size: 70px;
+  padding-inline: 20px;
+  background-color: #eed130;
+  border-radius: 20px;
+  border: 4px solid #171576;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#info {
+  align-items: end;
+  display: flex;
+  gap: 30px;
+}
+
+#info p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#info h3 {
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+#info span {
+  font-size: 20px;
+}
+
+#contato p, #fale-conosco p {
+  margin-bottom: unset;
+}
+
+#contato p:hover, #fale-conosco p:hover, #contato a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#contato a {
+  text-decoration: none;
+  color: #171576;
+}
