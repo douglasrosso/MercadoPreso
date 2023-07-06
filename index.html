@@ -9,13 +9,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-  <script src="js/scripts.js" defer></script>
 </head>
 
 <body class="pagina-registro">
   <header class="header-container">
     <i class="bi bi-link"></i>
     <h1>MercadoPreso </h1>
+    <section id="efeitoFade" class="escondido">
+      <article id="loading" class="spinner-border text-info escondido" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </article>
+      <section id="mensagem" class="escondido">
+        <article class="alert alert-light" role="alert">
+          <h4>Mensagem:</h4>
+          <p></p>
+          <button id="fechar-mensagem" type="button" class="btn btn-secondary">
+            Fechar
+          </button>
+        </article>
+      </section>
+    </section>
   </header>
 
   <main id="conteudo-cadastro-container">
@@ -41,19 +54,19 @@
       <section class="row mb-3">
         <article class="form-floating mu-textfield">
           <input class="form-control shadow-none" type="email" name="email" id="email" placeholder="Digite seu e-mail"
-            data-min-length="2" data-email-validate required data-input>
+            data-min-length="2" data-email-validate>
           <label for="email">E-mail</label>
         </article>
       </section>
       <section class="row mb-3">
         <article class="col-12 col-sm-6 mb-3 mb-md-0 form-floating mu-textfield">
           <input class="form-control shadow-none" type="text" name="name" id="name" placeholder="Digite seu nome"
-            required data-input data-min-length="3" data-max-length="16">
+            data-min-length="3" data-max-length="16">
           <label for="name">Nome</label>
         </article>
         <article class="col-12 col-sm-6 form-floating mu-textfield">
           <input class="form-control shadow-none" type="password" name="senha" id="senha" placeholder="Digite sua senha"
-            data-password-validate required data-input>
+            data-password-validate>
           <label for="sobrenome">Senha</label>
         </article>
 
@@ -61,7 +74,7 @@
       <section class="row mb-3">
         <article class="col-12 col-sm-6 mb-3 mb-md-0 form-floating mu-textfield">
           <input class="form-control shadow-none" type="text" name="sobrenome" id="sobrenome"
-            placeholder="Digite seu sobrenome" required data-input data-only-letters>
+            placeholder="Digite seu sobrenome" data-only-letters>
           <label for="sobrenome">Sobrenome</label>
         </article>
         <article class="col-12 col-sm-6 mb-3 form-floating mu-textfield">
@@ -71,7 +84,7 @@
         </article>
       </section>
       <div class="d-flex justify-content-end mu-textfield">
-        <input class="form-control shadow-none" id="btn-submit" type="submit" value="Registrar">
+        <input class="btn-submit form-control shadow-none" id="registrar" type="submit" value="Registrar">
       </div>
     </form>
   </main>
@@ -98,6 +111,13 @@
       <a href="https://github.com/douglasrosso/MercadoPreso" target="_blank">mercadopresoltda@email.com</a>
     </section>
   </footer>
+  <script>
+    const btnSubmit = document.getElementById("registrar");
+    btnSubmit.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "endereco.html";
+    });
+  </script>
 </body>
 
 </html>
